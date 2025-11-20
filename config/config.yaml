@@ -95,6 +95,7 @@ weight:
 
 # name 可以定义任意名称，只具有显示作用，即使项目运行了几天后，忽然改掉 name 也不会影响代码的正常运行
 platforms:
+  
   # === 综合新闻媒体类 ===
   - id: "toutiao"
     name: "今日头条"
@@ -114,24 +115,6 @@ platforms:
     name: "MKT新闻"
   - id: "kaopu"
     name: "靠谱新闻"
-  - id: "xinhuanet"
-    name: "新华网"
-  - id: "people"
-    name: "人民网"
-  - id: "gmw"
-    name: "光明网"
-  - id: "chinanews"
-    name: "中国新闻网"
-  - id: "guancha"
-    name: "观察者网"
-  - id: "dwnews"
-    name: "多维新闻"
-  - id: "nytimes-cn"
-    name: "纽约时报中文网"
-  - id: "bbc-chinese"
-    name: "BBC 中文网"
-  - id: "reuters-cn"
-    name: "路透中文网"
 
   # === 财经投资类 ===
   - id: "wallstreetcn-hot"
@@ -150,18 +133,6 @@ platforms:
     name: "金十数据"
   - id: "fastbull"
     name: "快讯通"
-  - id: "caixin"
-    name: "财新网"
-  - id: "yicai"
-    name: "第一财经"
-  - id: "hexun"
-    name: "和讯网"
-  - id: "eastmoney"
-    name: "东方财富网"
-  - id: "bloomberg-cn"
-    name: "彭博社中文"
-  - id: "ft-chinese"
-    name: "金融时报中文网"
 
   # === 社交/短视频/娱乐类 ===
   - id: "weibo"
@@ -176,18 +147,6 @@ platforms:
     name: "知乎"
   - id: "hupu"
     name: "虎扑"
-  - id: "kuaishou"
-    name: "快手"
-  - id: "xiaohongshu"
-    name: "小红书"
-  - id: "douban"
-    name: "豆瓣"
-  - id: "instagram"
-    name: "Instagram"
-  - id: "twitter"
-    name: "Twitter (X)"
-  - id: "facebook"
-    name: "Facebook"
 
   # === 科技类平台 ===
   - id: "ithome"
@@ -210,33 +169,35 @@ platforms:
     name: "少数派"
   - id: "producthunt"
     name: "ProductHunt"
-  - id: "techcrunch-cn"
-    name: "TechCrunch 中文"
-  - id: "36kr"
-    name: "36氪"
-  - id: "leiphone"
-    name: "雷锋网"
-  - id: "geekpark"
-    name: "极客公园"
-  - id: "csdn"
-    name: "CSDN"
-  - id: "oschina"
-    name: "开源中国"
 
   # === 其他/工具类 ===
   - id: "chongbuluo"
     name: "虫部落"
-  - id: "smzdm"
-    name: "什么值得买"
-  - id: "zaker"
-    name: "ZAKER"
-  - id: "qdaily"
-    name: "好奇心日报"
-  - id: "jiemian"
-    name: "界面新闻"
-  - id: "sohu"
-    name: "搜狐新闻"
-  - id: "wangyi"
-    name: "网易新闻"
-  - id: "tencent-news"
-    name: "腾讯新闻"
+
+  # ======================================================
+  # 暂时失败的渠道（可能需要修复或接口已变更）
+  # 备注：以下渠道在测试中抓取失败，已暂时注释
+  # 如需使用请检查API接口状态或联系维护团队
+  # ======================================================
+  
+  # 失败的综合新闻媒体类
+  # - id: "sina"
+  #   name: "新浪"           # 失败原因：接口可能已变更
+  # - id: "sohu" 
+  #   name: "搜狐"           # 失败原因：接口可能已变更
+  
+  # 失败的财经类
+  # - id: "ghxi"
+  #   name: "国海证券"       # 失败原因：接口可能已变更
+  
+  # 失败的社交/短视频类
+  # - id: "kuaishou"
+  #   name: "快手"           # 失败原因：接口可能已变更
+  # - id: "smzdm"
+  #   name: "什么值得买"     # 失败原因：接口可能已变更
+  
+  # 失败的科技类
+  # - id: "36kr"
+  #   name: "36氪"           # 失败原因：接口可能已变更
+  # - id: "linuxdo"
+  #   name: "LinuxDo"        # 失败原因：接口可能已变更
